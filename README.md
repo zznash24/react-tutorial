@@ -68,3 +68,47 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- Class based components vs functional based components -->
+
+Functional Components:
+Syntax:
+    Functional components are defined as JavaScript functions.
+    They are typically arrow functions that return JSX (JavaScript XML) elements.
+
+    State Management:
+    Before React Hooks (introduced in React 16.8), functional components were stateless. They couldn't manage state or use lifecycle methods.
+    With React Hooks (like useState, useEffect, etc.), functional components can now manage state and utilize other React features previously available only in class components.
+
+    Lifecycle Methods:
+    Functional components don't have lifecycle methods like componentDidMount, componentDidUpdate, etc., which were used in class components.
+    Instead, React Hooks (useEffect) can be used for managing side effects and mimicking lifecycle behavior.
+
+    Code Simplicity:
+    Functional components are generally more concise and easier to read/write compared to class components.
+
+    They promote a more functional programming style, which can be more intuitive for developers familiar with JavaScript functions.
+
+Class-Based Components
+Syntax:
+    Class-based components are ES6 classes that extend from React.Component.
+    They use the render() method to return JSX for rendering UI.
+
+    State Management:
+    Class components can manage state using this.state and this.setState() methods.
+    State is initialized in the constructor (constructor(props)) and updated via setState().
+
+    Lifecycle Methods:
+    Class components have access to lifecycle methods (componentDidMount, componentDidUpdate, etc.) that allow developers to perform actions during different stages of a component's lifecycle.
+    Lifecycle methods are useful for tasks like fetching data, subscribing to events, and managing updates.
+
+    Legacy Usage:
+    Class-based components were the traditional way of defining components in React prior to the introduction of functional components with hooks.
+    Many existing React codebases still use class components, but functional components with hooks are now the recommended approach for new projects.
+
+Recommendation:
+For Beginners: Learn functional components with hooks. They are simpler and align with modern React best practices.
+
+Legacy Understanding: Introduce class components briefly for understanding existing codebases, but focus on functional components for new development.
+
+Emphasize Hooks: Explain the importance of React Hooks for state management (useState), side effects (useEffect), and context (useContext), which are fundamental concepts in React development today.
