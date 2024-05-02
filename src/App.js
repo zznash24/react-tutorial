@@ -3,10 +3,12 @@ import "./App.css";
 import MyForm from "./components/form";
 import Counting from "./components/Functionalcounting";
 import Classcounting from "./components/Classcounting";
+import Navbarcomponent from "./components/Navbarcomponent";
 
 function App() {
   return (
     <>
+    <Navbarcomponent />
       <div className="my-form">
         <MyForm />
       </div>
