@@ -21,6 +21,7 @@ const MyForm = () => {
       email: '',
       password: ''
     });
+    console.log(formData)
   };
 
   return (
